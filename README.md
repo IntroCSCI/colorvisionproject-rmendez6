@@ -41,25 +41,23 @@ Regular settings: enabled
 
 ### Variables and Data Types
 
-I used string to represent "yes" or "no" as decision. It allows the user to select whether they want to enable the regular setings or the colorblind settings.
+I used string to represent "yes" or "no" as string decision. It allows the user to select whether they want to enable the regular setings or the colorblind settings. Another variable I used was int to gather the users age. I also used char for descision2 to get the users input on if they use galsses. I also used string firstName and string lastName to gather the users first and last name. Finally, I used bool to represent glasses to gather if the user picked 'y' or 'n' for decision2.
 
- !!!Replace with a summary and examples of how multiple variables have been used with a variety of data types and why they have been used effectively and appropriately!!!
 
 ### Input and Output
 
-!!!Replace with a summary and examples of how input and output have been used effectively and appropriately!!!
-Input is this in this program as the user is asked whether they want to enable colorblind settings and the user inouts either "yes"or "no". Input is seen as cin is this program. 
-The output in this program comes after the user inputs their decision. If the user inputs "yes" then the output will say "Colorblind settings enabled." If the user inputs "no" then the output will say "Regular settings enabled." The output in this program is cout.
+Input is this in this program as the user is asked whether they want to enable colorblind settings and the user inouts either "yes"or "no". The user also inputs thier first and last name, as well as their age. Input is seen as cin is this program. 
+The output in this program comes after the user inputs their decision. If the user inputs "yes" then the output will say "Colorblind settings enabled." If the user inputs "no" then the output will say "Regular settings enabled." If the user inouts something else rather than yes or no the program will putput "Please enter yes or no." The output in this program is cout.
 ### Decisions
 
 !!!Replace with a summary and examples of how multiple decision constructs have been used effectively and appropriately!!!
 
+For decisions I used an if, else if, and ese statement. For the if statement, it was used for if the user entered "yes" it would display "Colorblind settings: enabled." For the else if statement, if the user entered "no" it would display "Regular settings: enabled." For the else statement, if the user entered something other than "yes" or "no" it would display "Please enter Yes or No."
+
 ### Iteration
 
-!!!Replace with a summary and examples of how iteration has been used effectively and appropriately!!!
 For iteration I used a do-while loop to gather the users input and if the input was something othe than asked for, it would ask the user the question again until a viable answer was inputed. 
 
 ### File Input and Output
 
-!!!Replace with a summary and examples of how input and/or output of files have been used effectively and appropriately!!!
-I used input/output files by having the user answer a couple questions throughout the program and giving the user the results at the end in a file called results.txt. For example, I asked for the users file input when I asked "Hi, what is your first name?:" and it was saved to the output file called result.txt. I also asked the user "What is your last name?:" and it was saved to the output file callws results.txt. Other examples include, "How old are you?:" and "Do you wear glasses?(Y/N): and "Welcome, would you like to turn on colorblind settings?(Yes or NO)." The users file input is saved to results.txt and shown to the user at the end of the program in the results.txt file.
+I used input/output files by having the user answer a couple questions throughout the program and giving the user the results at the end in a file called results.txt. For example, I asked for the users file input when I asked "Hi, what is your first name?:" and it was saved to the output file called result.txt. I also asked the user "What is your last name?:" and it was saved to the output file called results.txt. Other examples include, "How old are you?:" and "Do you wear glasses?(Y/N): and "Welcome, would you like to turn on colorblind settings?(Yes or NO)." The users file input is saved to results.txt and shown to the user at the end of the program in the results.txt file.
