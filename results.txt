@@ -1,0 +1,5 @@
+First Name: rey
+Last Name: mendez
+Age: 21
+Use of glasses(0=No,1=Yes): 1
+Regular settings: enabled

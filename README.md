@@ -42,6 +42,7 @@ The output in this program comes after the user inputs their decision. If the us
 ### Iteration
 
 !!!Replace with a summary and examples of how iteration has been used effectively and appropriately!!!
+For iteration I used a do-while loop to gather the users input and if the input was something othe than asked for, it would ask the user the question again until a viable answer was inputed. 
 
 ### File Input and Output
 
