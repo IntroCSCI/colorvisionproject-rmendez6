@@ -17,7 +17,7 @@ int main()
 
   outfile << "First Name: " << firstName << endl;
 
-  cout << "What is you last name?:";
+  cout << "What is your last name?:";
   cin >> lastName;
 
   outfile << "Last Name: " << lastName << endl;
@@ -61,6 +61,7 @@ int main()
   }while (decision != "yes" && decision != "no");
 
   outfile.close();
+  cout << "Thank you for answering the questions, your results are in the results.txt file." << endl;
 
   return 0;
 }

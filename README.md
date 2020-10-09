@@ -19,7 +19,22 @@ g++ --std=c++11 main.cpp -o cvp
 Here is an example of the program running:
 
 ```
-!!!Replace with an example of the program running with user interaction!!!
+Hi, what is your first name?:rey
+What is you last name?:mendez 
+How old are you?:23
+Do you wear glasses? (Y/N):y
+Welcome, would you like to turn on colorblind settings? (Yes or No):n
+Please enter Yes or No.
+Welcome, would you like to turn on colorblind settings? (Yes or No):no
+Regular settings: enabled
+Thank you for answering the questions, your results are in the results.txt file.
+
+Here is an example of the results.txt file looks like:
+First Name: rey
+Last Name: mendez
+Age: 23
+Use of glasses(0=No,1=Yes): 0
+Regular settings: enabled
 ```
 
 ## C++ Guide
@@ -47,3 +62,4 @@ For iteration I used a do-while loop to gather the users input and if the input 
 ### File Input and Output
 
 !!!Replace with a summary and examples of how input and/or output of files have been used effectively and appropriately!!!
+I used input/output files by having the user answer a couple questions throughout the program and giving the user the results at the end in a file called results.txt. For example, I asked for the users file input when I asked "Hi, what is your first name?:" and it was saved to the output file called result.txt. I also asked the user "What is your last name?:" and it was saved to the output file callws results.txt. Other examples include, "How old are you?:" and "Do you wear glasses?(Y/N): and "Welcome, would you like to turn on colorblind settings?(Yes or NO)." The users file input is saved to results.txt and shown to the user at the end of the program in the results.txt file.
