@@ -1,6 +1,10 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 using namespace std;
+
+vector<string>answers;
+string answers;
 
 int main()
 {
@@ -32,18 +36,18 @@ int main()
 
   if (decision2 == 'Y') 
   {
-  glasses = true;
+    glasses = true;
   }
   else if (decision2 == 'N')
   {
-  glasses = false;  
+    glasses = false;  
   }
   
   outfile << "Use of glasses(0=No,1=Yes): " <<glasses << endl;
 
   do{
-  cout << "Welcome, would you like to turn on colorblind settings? (Yes or No):";
-  cin >> decision;
+    cout << "Welcome, would you like to turn on colorblind settings? (Yes or No):";
+    cin >> decision;
   if (decision == "yes") 
   {
     cout << "Colorblind setttings enabled" << endl;
@@ -61,7 +65,7 @@ int main()
   }while (decision != "yes" && decision != "no");
 
   outfile.close();
-  cout << "Thank you for answering the questions, your results are in the results.txt file." << endl;
+    cout << "Thank you for answering the questions, your results are in the results.txt file." << endl;
 
   return 0;
 }
