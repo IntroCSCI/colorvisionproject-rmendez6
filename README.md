@@ -61,7 +61,8 @@ For iteration I used a do-while loop to gather the users input and if the input 
 I used input/output files by having the user answer a couple questions throughout the program and giving the user the results at the end in a file called results.txt. For example, I asked for the users file input when I asked "Hi, what is your first name?:" and it was saved to the output file called result.txt. I also asked the user "What is your last name?:" and it was saved to the output file called results.txt. Other examples include, "How old are you?:" and "Do you wear glasses?(Y/N): and "Welcome, would you like to turn on colorblind settings?(Yes or NO)." The users file input is saved to results.txt and shown to the user at the end of the program in the results.txt file.
 
 ### v0.2 Updates
-
+Added a vector of string in order to take in the question of "Does color blindness run in the family?" in order to diplay color blind settings. 
 ### Arrays/Vectors
-
+Added vector answerVector to take in the string answer andd store it then display the answer. Also used the .push_back function to display at the end. 
 ### Functions
+Added string answer for the question asked at the bottom of the program after the file closes. Added another if statement and else statment to cout the answer to the question. 

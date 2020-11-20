@@ -3,12 +3,11 @@
 #include <vector>
 using namespace std;
 
-vector<string>answers;
-string answers;
-
 int main()
 {
-  string decision, firstName, lastName;
+  vector<string>answerVector;
+
+  string answer, decision, firstName, lastName;
   int age;
   bool glasses;
   char decision2; 
@@ -66,6 +65,15 @@ int main()
 
   outfile.close();
     cout << "Thank you for answering the questions, your results are in the results.txt file." << endl;
+  
+  cout << "Does color blindness run in the family?(Y or N)" << endl;
+  cin >> answer;
+  if (answer == "Y") {
+    string formatttedAnswer= "Yes color blindess runs in the family";
+    answerVector.push_back(formatttedAnswer);
+  }
+  else 
+  cout << "No, color blindness does not run in the family" <<endl;
 
   return 0;
 }
