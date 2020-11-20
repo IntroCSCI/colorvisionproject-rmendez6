@@ -63,6 +63,6 @@ I used input/output files by having the user answer a couple questions throughou
 ### v0.2 Updates
 Added a vector of string in order to take in the question of "Does color blindness run in the family?" in order to diplay color blind settings. 
 ### Arrays/Vectors
-Added vector answerVector to take in the string answer andd store it then display the answer. Also used the .push_back function to display at the end. 
+Added vector answerVector to take in the string answer andd store it then display the answer. Also used the .push_back function to display at the end and the print function to display what the user inputed. 
 ### Functions
-Added string answer for the question asked at the bottom of the program after the file closes. Added another if statement and else statment to cout the answer to the question. 
+Added string answer for the question asked at the bottom of the program after the file closes. Added another if statement to cout the answer to the question. Also added a for loop to go with the vector. 
