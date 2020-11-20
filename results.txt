@@ -1,2 +1,5 @@
 First Name: rey
 Last Name: mendez
+Age: 23
+Use of glasses(0=No,1=Yes): 0
+Colorblind setttings: enabled

@@ -72,8 +72,11 @@ int main()
     string formatttedAnswer= "Yes color blindess runs in the family";
     answerVector.push_back(formatttedAnswer);
   }
-  else 
-  cout << "No, color blindness does not run in the family" <<endl;
+   cout << "Yes, color blindness runs in the family ";
+
+  for(int i=0; i < answerVector.size(); i++)
+   cout << answerVector[i] << ' ';
+  
 
   return 0;
 }
