@@ -1,10 +1,36 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include "libraries/bitmap.h"
 using namespace std;
 
 int main()
 {
+  Bitmap image;
+  vector <vector <Pixel> > bmp;
+  Pixel rgb;
+
+  //read a file example.bmp and convert it to a pixel matrix
+  image.open("bmp_24.bmp");
+
+  //verify that the file opened was a valid image
+  bool validBmp = image.isImage();
+
+  if( validBmp == true )
+  {
+    bmp = image.toPixelMatrix();
+  
+
+    //take all the redness out of the top-left pixel
+    rgb = bmp[0][0];
+    rgb.red = 0; 
+
+    //put changed image back into matrix, update the bitmap and save it
+    bmp[0][0] = rgb;
+    image.fromPixelMatrix(bmp);
+    image.save("example.bmp");
+  }
+  /*
   vector<string>answerVector;
 
   string answer, decision, firstName, lastName;
@@ -77,6 +103,6 @@ int main()
   for(int i=0; i < answerVector.size(); i++)
    cout << answerVector[i] << ' ';
   
-
+*/
   return 0;
 }
