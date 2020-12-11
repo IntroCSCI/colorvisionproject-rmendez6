@@ -2,6 +2,9 @@
 #include <fstream>
 #include "bitmap.h"
 #include <cstdlib>
+#include <vector>
+
+using namespace std;
 
 typedef unsigned char uchar_t;
 typedef unsigned int uint32_t;
@@ -289,4 +292,33 @@ PixelMatrix Bitmap::toPixelMatrix()
 void Bitmap::fromPixelMatrix(const PixelMatrix & values)
 {
 	pixels = values;
+}
+void Bitmap::grayScaleConverter(std::string imageFile){
+  Bitmap image;
+  vector <vector <Pixel> > bmp;
+  Pixel rgb;
+
+  //read a file example.bmp and convert it to a pixel matrix
+  image.open(imageFile);
+
+  //verify that the file opened was a valid image
+  bool validBmp = image.isImage();
+
+  if( validBmp == true )
+  {
+   bmp=image.toPixelMatrix();
+  for(int height=0; height<bmp.size();height++){
+    for(int width=0; width<bmp[height].size();width++){
+      rgb=bmp[height][width];
+      int average=((rgb.red)+(rgb.blue)+(rgb.green))/3;
+      rgb.red=average;
+      rgb.blue=average;
+      rgb.green=average;
+      
+      bmp[height][width]=rgb;
+    }
+  }
+    image.fromPixelMatrix(bmp);
+    image.save("converted_"+imageFile);
+  }
 }

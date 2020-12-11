@@ -1,5 +1,6 @@
-First Name: rey
-Last Name: mendez
+First Name: Rey
+Last Name: Mendez
 Age: 23
 Use of glasses(0=No,1=Yes): no
-Are color blind settings enabled: Yes
+Rey was able to see yellow in the snailimage.bmp file.
+Rey was not able to see browm in the snailimage.bmp file.

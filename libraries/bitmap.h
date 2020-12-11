@@ -83,6 +83,8 @@ class Bitmap
      * @param a matrix of pixels to represent a bitmap
     **/
     void fromPixelMatrix(const PixelMatrix &);
+
+    void grayScaleConverter(std::string imageFile);
     
 };
 
