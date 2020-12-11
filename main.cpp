@@ -133,11 +133,19 @@ int main()
     cin >> decision;
   if (decision == "Yes" || decision == "yes") 
   {
-    cout << "Colorblind setttings enabled for " << choice << " and it is now in the converted_" << choice << "file." << endl;
+    cout << "Colorblind setttings enabled for " << choice << " and it is now in the converted_" << choice << " file." << endl;
+
+    outfile << test.getFirstName() << " decided to turn on colorblind settings and convert" << " " << choice << " to gray and black." << endl;
 
     image.grayScaleConverter("greenland.bmp");
     cout << "Are you now able to see the image in gray and black?(Yes/No)" << endl;
     cin >> finalAnswer;
+    if( finalAnswer == "Yes" ){
+      outfile <<  finalAnswer << " " << test.getFirstName() << " was able to see the converted image in gray and black." << endl;
+    }
+    else if( finalAnswer == "No"){
+      outfile << finalAnswer << " " << test.getFirstName() << " was not able to see the converted image in gray and balck." << endl;
+    }
   }
 
   else if (decision == "No" || decision == "no") 
@@ -149,9 +157,6 @@ int main()
     cout << "Please enter Yes or No." << endl;
   }
   }while (decision != "Yes" && decision != "yes" && decision != "No" && decision != "no");
-
-    test.setColorBlindSetting(decision);
-    outfile << "Color blind settings enabled: " << test.getColorBlindSetting()<< endl;
 
   outfile.close();
     cout << "Thank you for answering the questions, your results are in the results.txt file." << endl;

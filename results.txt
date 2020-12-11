@@ -2,5 +2,5 @@ First Name: Rey
 Last Name: Mendez
 Age: 23
 Use of glasses(0=No,1=Yes): no
-Rey was able to see yellow in the snailimage.bmp file.
-Rey was not able to see browm in the snailimage.bmp file.
+Rey decided to turn on colorblind settings and convert snailimage.bmp\ to gray and black.
+Yes Rey was able to see the converted image in gray and black.
