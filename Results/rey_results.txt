@@ -1,0 +1,11 @@
+      Colorblind profile.
+First Name: rey
+Last Name: mendez
+Age: 23
+Use of glasses: no
+Colorblidness does not run in the family.
+rey selected to opensnailimage.bmp
+rey was able to see yellow in the snailimage.bmp file.
+rey was not able to see browm in the snailimage.bmp file.
+rey decided to turn on colorblind settings and convert snailimage.bmp to gray and black.
+yes rey was able to see the converted image in gray and black.

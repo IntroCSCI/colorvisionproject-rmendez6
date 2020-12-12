@@ -293,13 +293,14 @@ void Bitmap::fromPixelMatrix(const PixelMatrix & values)
 {
 	pixels = values;
 }
-void Bitmap::grayScaleConverter(std::string imageFile){
+void Bitmap::grayScaleConverter(std::string imageFile, std::string &convertedFileName){
+  convertedFileName="converted_" + imageFile;
   Bitmap image;
   vector <vector <Pixel> > bmp;
   Pixel rgb;
 
   //read a file example.bmp and convert it to a pixel matrix
-  image.open(imageFile);
+  image.open("Images/" +imageFile);
 
   //verify that the file opened was a valid image
   bool validBmp = image.isImage();
@@ -319,6 +320,6 @@ void Bitmap::grayScaleConverter(std::string imageFile){
     }
   }
     image.fromPixelMatrix(bmp);
-    image.save("converted_"+imageFile);
+    image.save("CI/converted_"+imageFile);
   }
 }

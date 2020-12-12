@@ -51,3 +51,12 @@ void user::setColorBlindSetting(string input){
 string user::getColorBlindSetting(){
   return colorBlindSetting;
 }
+void user::setFamilyColorBlind(string input){
+  familyColorBlindVector.push_back(input);
+}
+vector <string> user::getFamilyColorBlind(){
+  return familyColorBlindVector; 
+}
+  int user::getNumberFamilyMembers(){
+   return familyColorBlindVector.size();
+}

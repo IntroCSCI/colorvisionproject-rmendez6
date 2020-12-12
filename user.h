@@ -10,7 +10,7 @@ using namespace std;
 class user
 {
   private: // Only can be used directly INSIDE this class
-    vector<string>answerVector;
+    vector<string>familyColorBlindVector;
     string answer;
     string decision;
     string firstName;
@@ -35,5 +35,8 @@ class user
     string getGlasses();
     void setColorBlindSetting(string input);
     string getColorBlindSetting();
+    void setFamilyColorBlind(string input);
+    vector <string> getFamilyColorBlind();
+    int getNumberFamilyMembers();
 };
 #endif
