@@ -1,7 +1,7 @@
 # !!!Replace with your unique project name!!!
-Color Vision Friendly Website 
+Color Vision Friendly Program 
 ## Description
-Color vision friendly website allows users to pick one of two options to determine colorblindness in order to display the appropriate colors for each user. Important information will not be color coded in this website as to allow all users to view imortant information all the same for those unaware of colorblindness. 
+Color vision friendly program allows the user to pick one of two images to determine colorblindness in order to display the appropriate colors for each user. Images will then be converted to a gray scale if choosen by the user in order to see the image correctly. The program first takes in the users background information and then proceeds to display an image choosen by the user. The user can then decide if they want to turn colorblind settings on which converts the image to a gray scale image. At the end of the program the users input information is is displayed in a results file which has everything the use entered and selected. 
 
 ## Developer
 
@@ -50,7 +50,7 @@ Input is used in this program as the user is asked whether they want to enable c
 The output in this program comes after the user inputs their decision. If the user inputs "yes" then the output will say "Colorblind settings enabled." If the user inputs "no" then the output will say "Regular settings enabled." If the user inputs something else rather than yes or no the program will putput "Please enter yes or no." The output in this program is cout.
 ### Decisions
 
-For decisions I used an if, else if, and else statement. For the if statement, it was used for if the user entered "yes" it would display "Colorblind settings: enabled." For the else if statement, if the user entered "no" it would display "Regular settings: enabled." For the else statement, if the user entered something other than "yes" or "no" it would display "Please enter Yes or No."
+For decisions I used an if, else if, and else statements. For the if statement, it was used for if the user entered "yes" it would display "Colorblind settings: enabled." For the else if statement, if the user entered "no" it would display "Regular settings: enabled." For the else statement, if the user entered something other than "yes" or "no" it would display "Please enter Yes or No."
 
 ### Iteration
 
@@ -66,3 +66,23 @@ Added a vector of string in order to take in the question of "Does color blindne
 Added vector answerVector to take in the string answer andd store it then display the answer. Also used the .push_back function to display at the end and the print function to display what the user inputed. 
 ### Functions
 Added string answer for the question asked at the bottom of the program after the file closes. Added another if statement to cout the answer to the question. Also added a for loop to go with the vector. 
+### v0.1 Updates
+Updated the program by making it covert a regular image to black and gray for colorblind settings. Completely redid the program by adding images and a gray scale converter and by adding a user class. Also added vectors, pass by reference, and more variables. Added multiple variables of string and bitmap images. Redid the vector I previously had which did not do much until now. Added two pass by refernces which will be commented in the program as well as the rest of the changes. Changed the bitmap.cpp and bitmap.h where the gray scale converter function is which has the vector of pixles. Also added in there the nested for loops to go through each pixel of the saved image. Changes are commented throughtput the program. The program now has images which a user can select in the image file in order to convert them to a gray scale image which will appear in the CI file if they select to convert the image. The program first gathers a users background information which ties into the colorblind settings later in the program. At the end of the program all the infromation input by the user is shown in a results file.
+### Classes
+Added a class which is defined as user in the Classes folder. Contains attributes in the private class such as name, age, and family mamebers names which are private. Member functions are then defined in the public class such as the familyColorblind vector and other variables. 
+
+Example of new program runing:
+   Colorblind profile.
+First Name: Rey
+Last Name: Mendez
+Age: 23
+Use of glasses: no
+Family members with colorblindness:
+1. Rey 
+2. Chris 
+Number of family members with colorblindness: 2
+Rey selected to opensnailimage.bmp
+Rey was able to see yellow in the snailimage.bmp file.
+Rey was not able to see browm in the snailimage.bmp file.
+Rey decided to turn on colorblind settings and convert snailimage.bmp to gray and black.
+yes Rey was able to see the converted image in gray and black.

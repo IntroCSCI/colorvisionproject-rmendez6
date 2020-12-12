@@ -1,0 +1,14 @@
+      Colorblind profile.
+First Name: Rey
+Last Name: Mendez
+Age: 23
+Use of glasses: no
+Family members with colorblindness:
+1. Rey 
+2. Chris 
+Number of family members with colorblindness: 2
+Rey selected to opensnailimage.bmp
+Rey was able to see yellow in the snailimage.bmp file.
+Rey was not able to see browm in the snailimage.bmp file.
+Rey decided to turn on colorblind settings and convert snailimage.bmp to gray and black.
+yes Rey was able to see the converted image in gray and black.

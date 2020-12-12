@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include "user.h"
+#include "Classes/user.h"
 #include "libraries/bitmap.h"
 using namespace std;
 
@@ -20,6 +20,7 @@ int main()
 
 
   ofstream outfile;
+  // Program starts by asking the user background information and saves the answers to the outfile.
 
   cout << "Hi, what is your first name?:";
   cin >> firstName;
@@ -67,6 +68,7 @@ int main()
       }
     }while(familyColorBlind != "No" && familyColorBlind != "no");
     outfile << "Family members with colorblindness:" << endl;
+    // new vector added here 
     familyVector=test.getFamilyColorBlind();
     for(int i=0; i < familyVector.size(); i++){
       cout << i+1 << ". " <<familyVector[i] << ' ' << endl;
@@ -74,11 +76,13 @@ int main()
     }
     cout << "Number of family members with colorblindness: " << test.getNumberFamilyMembers()<< endl;
     outfile << "Number of family members with colorblindness: " << test.getNumberFamilyMembers()<< endl;
+    // new vector above called familyVector sets and gets names of family members with colorblindness and then returns them which are then put into the outfile.
   }
   else if(answer == "No" || answer == "no"){
     cout << "Colorblidness does not run in the family." << endl;
     outfile << "Colorblidness does not run in the family." << endl;
   }
+  //program allows user to select an image in the Images file to view and answer questions are colors they see which can be converted to gray and black if they user gets the original colors wrong and they select to convert the image.
   cout << "Colorblind image test will now start. Would you like to open the greenland.bmp or snailimage.bmp in the Images folder?"<<endl;
   cin >> choice;
   outfile << test.getFirstName()<< " selected to open" << choice << endl;
@@ -145,6 +149,7 @@ int main()
       outfile << test.getFirstName() << " was not able to see browm in the snailimage.bmp file." <<endl;
     }
   }
+  // user decideds if they want to convert image here
   do{
     cout << "Would you like to turn on colorblind settings for greenland.bmp or snailimage.bmp and covert image to grayscale? (Yes or No):";
     cin >> decision;
@@ -154,10 +159,13 @@ int main()
 
     outfile << test.getFirstName() << " decided to turn on colorblind settings and convert" << " " << choice << " to gray and black." << endl;
 
+    //lets the user know where the new gray and black converted image will be. resuable gray scale converter function.
+
     image.grayScaleConverter(choice, convertedFileName);
     cout << "Converted image for " << choice << " is now in the converted images folder called CI. The file is named "<< convertedFileName << endl;
     cout << "Please open image." << endl;
-
+    
+    //asks the user if they are able to see the converted image in gray and black now.
     cout << "Are you now able to see the image in gray and black?(Yes/No)" << endl;
     cin >> finalAnswer;
     if( finalAnswer == "Yes" || finalAnswer == "yes"){
@@ -177,6 +185,8 @@ int main()
     cout << "Please enter Yes or No." << endl;
   }
   }while (decision != "Yes" && decision != "yes" && decision != "No" && decision != "no");
+
+  //lets the user know where the reults of the program will be at 
 
   outfile.close();
     cout << "Thank you for answering the questions, your results are in the " << "Results/" << test.getFirstName()+"_results.txt" << endl;

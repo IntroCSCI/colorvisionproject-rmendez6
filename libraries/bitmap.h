@@ -84,6 +84,7 @@ class Bitmap
     **/
     void fromPixelMatrix(const PixelMatrix &);
 
+    // added gray scale converter here 
     void grayScaleConverter(std::string imageFile, std::string &convertedFileName);
     
 };

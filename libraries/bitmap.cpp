@@ -289,6 +289,9 @@ PixelMatrix Bitmap::toPixelMatrix()
  *
  * @param a matrix of pixels to represent a bitmap
 **/
+
+//added vector of vector pixels and saves it as bmp. pixels is then rgb 
+
 void Bitmap::fromPixelMatrix(const PixelMatrix & values)
 {
 	pixels = values;
@@ -304,7 +307,7 @@ void Bitmap::grayScaleConverter(std::string imageFile, std::string &convertedFil
 
   //verify that the file opened was a valid image
   bool validBmp = image.isImage();
-
+  // down below function takes average of pixels and divides by 3 abd sets the average which then reassigns pixels to gra color 
   if( validBmp == true )
   {
    bmp=image.toPixelMatrix();
